@@ -297,3 +297,17 @@ Total 13 (delta 1), reused 0 (delta 0)
 remote: Resolving deltas: 100% (1/1), done.
 To https://github.com/Aamirrafi/tutorial.git
  * [new branch]      master -> master
+
+ Git remote
+ # Show where 'origin' is pointing to and also tracked branches
+ $ git remote show origin
+
+ # Show where 'origin' is pointing to
+ $ git remote -v
+
+ # Change the 'origin' remote's URL
+ $ git remote set-url origin https://github.com/user/repo.git
+
+ # Add a new 'origin'
+ # Usually use to 'rebase' from forks
+ $ git remote add [NAME] https://github.com/user/fork-repo.git
